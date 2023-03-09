@@ -3,9 +3,16 @@ h3 {
 }
 
 img {
-
+   width: 100%;
+   height: auto;
 }
 
 .photos {
    text-align: center;
+   border-left-style: dotted;
+   border-right-style: dotted;
+}
+img#sam {
+   width: 1%;
+   height: auto;
 }
