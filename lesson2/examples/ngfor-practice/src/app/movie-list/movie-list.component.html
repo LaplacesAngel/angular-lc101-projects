@@ -1,7 +1,14 @@
-<div class='movies'>
-    <h3>Movies to Watch</h3>
+<div class='movies' *ngIf = "movies.includes('Spiderman 2'); else crappyMovies">
+    <h3>Movies that are good</h3>
     <ol>
         <li *ngFor = 'let movie of movies'>{{movie}}</li>
     </ol>
 </div>
 
+<ng-template   #crappyMovies>
+<div class="movies">
+    <h3>Suboptimal movie list</h3>
+    <ol>
+        <li *ngFor = 'let movie of movies'>{{movie}}</li>
+    </ol>
+</div>

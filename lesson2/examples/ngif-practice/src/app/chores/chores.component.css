@@ -5,7 +5,9 @@
 .doneChores {
     color: #3c79b8;
 }
-
+#work {
+    color:darkblue
+}
 h3 {
     text-align: center;
 }
