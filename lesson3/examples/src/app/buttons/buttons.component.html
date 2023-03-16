@@ -1,7 +1,20 @@
+<!--<div class="buttons">
+   <h3>{{buttonHeading}}</h3>
+   <button [class.gold]="!inactiveGold" [disabled]="inactiveGold" (click)="onClick('gold')">Gold</button> <br>
+   <button [class.silver]="!inactiveSilver" [disabled]="inactiveSilver" (click)="onClick('silver')">Silver</button> <br>
+   <button [class.copper]="!inactiveCopper" [disabled]="inactiveCopper" (click)="onClick('copper')">Copper</button> <hr>
+   <button (click)="onClickAll(); onClick1(inactive)">Activate/Deactivate Buttons</button>
+   <button [style.background]="blue">CLick MEEE!!!!!!!!!!</button>
+   <button disabled>Just try it boi (you can't, you literally can't)</button>
+</div> -->
+
+trying again down here
 <div class="buttons">
    <h3>{{buttonHeading}}</h3>
-   <button class="gold">Gold</button> <br>
-   <button class="silver">Silver</button> <br>
-   <button class="copper">Copper</button> <hr>
-   <button>Activate/Deactivate Buttons</button>
+   <button [class.gold]="butonState[0]" [disabled]="!butonState[0]" (click)="butonState[0] = false">Gold</button> <br>
+   <button [class.silver]="butonState[1]" [disabled]="!butonState[1]" (click)="butonState[1] = false">Silver</button> <br>
+   <button [class.copper]="butonState[2]" [disabled]="!butonState[2]" (click)="butonState[2] = false">Copper</button> <hr>
+   <button (click)="resetButtons()">Activate/Deactivate Buttons</button>
+   <button [style.background]="blue">CLick MEEE!!!!!!!!!!</button>
+   <button disabled>Just try it boi (you can't, you literally can't)</button>
 </div>
